@@ -1,0 +1,108 @@
+/* CELESTE GUPTA AND 29 SEPTEMBER 2019 */
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ribeye+Marrow&display=swap');
+
+body{
+	background-color: #093145;
+	text-align:center;
+}
+.commonDiv{
+	margin-left: 155px;
+	padding-left: 15px;
+}
+
+
+/* The sidebar menu */
+.sidenav {
+  height: auto; /* Full-height: remove this if you want "auto" height */
+  width: 180px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+
+/*.sidenav a:link {
+  color: #ff6347;
+}
+
+/* visited link */
+/*.sidenav a:visited {
+  color: #818181;
+}*/
+
+/* mouse over link */
+/*.sidenav a:hover {
+  color: #ffa500;
+}*/
+
+/* selected link */
+/*.sidenav a:active {
+  color: #0000FF;
+}*/
+
+/* Style page content */
+.content {
+
+	display:block;
+	/*font-family:Verdana,Arial,sans-serif;*/
+	font-family:'Niconne', cursive;
+	font-size:3em;
+	padding:10px;
+	border-radius:10px;
+	color:#fff8b5;
+	box-shadow:12px 12px 12px #404040;
+}
+
+.border1{
+	margin-top:10px;
+	padding:15px;
+	border-radius:10px;
+	box-shadow:12px 12px 12px #404040 inset;
+}
+
+.para{
+	color:#ffffff;
+}
+
+#logo{
+	border-radius: 50%;
+}
+
+#slide {
+	width:100%;
+	height:600px;
+	border-radius: 8px;
+}
+#slides img {
+	display: none;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+footer{
+	background-color:#3C6478;
+	color:#f18973;
+	margin-top:50px;
+	clear:both;
+	font-size: 0.95em;
+	text-align: center;
+}

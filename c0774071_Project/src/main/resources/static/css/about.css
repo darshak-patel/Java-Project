@@ -1,0 +1,248 @@
+
+/*Style to create a fluid layout*/
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ribeye+Marrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@500&display=swap');
+
+body{
+	background-color: #093145;
+	text-align:center;
+}
+
+img{
+	max-width:100%;
+	max-height:50%;
+}
+
+/*Styles for Mobile layout*/
+
+.mobile{
+	display:inline;
+}
+.tablet{
+	display:none;
+}
+.desktop{
+	display:none;
+}
+
+/*Styles for nav*/
+.nav{
+	font-family:Georgia,"Times New Roman",serif;
+	font-size:1.25em;
+	font-weight:bold;
+	text-align:center;
+	border-radius:0.5em;
+	border-top:5px solid #FFFFFF;
+	border-bottom:5px solid #FFFFFF;
+}
+
+.nav ul{
+	padding:1em;
+	margin-top:0.2em;
+	margin-bottom:0.2em;
+	
+}
+
+.nav li{
+	border-radius:2em;
+	list-style-type:none;
+	background-color:#ffffff;
+	margin:0.4em;
+	padding:0.4em;
+}
+
+/*
+.nav li a{
+	text-decoration:none;
+}
+.nav li a:link {
+  color: #ff6347;
+}
+
+/* visited link */
+/*.nav li a:visited {
+  color: #3cb371;
+}*/
+
+/* mouse over link 
+.nav li a:hover {
+  color: #ffa500;
+}
+*/
+/* selected link */
+/*.nav li a:active {
+  color: #0000FF;
+}
+*/
+
+.border1{
+	margin-top:20px;
+	padding:20px;
+	border-radius:10px;
+	box-shadow:12px 12px 12px #404040 inset;
+}
+
+.main{
+	display:block;
+	font-family:Verdana,Arial,sans-serif;
+	font-size:1em;
+	margin-top:0.5em;
+	padding:1em;
+	border-radius:1em;
+	background-color:#FFFFFF;
+	box-shadow:12px 12px 12px #404040;
+	
+}
+/*Styles for Tablet layout*/
+
+@media only screen and (min-width:481px){
+	.commonDiv{
+		margin-left: 155px;
+		padding-left: 15px;
+	}
+	
+	.sidenav 
+	{
+		height: auto; /* Full-height: remove this if you want "auto" height */
+		width: 180px; /* Set the width of the sidebar */
+		position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+		z-index: 1; /* Stay on top */
+		top: 0; /* Stay at the top */
+		left: 0;
+		overflow-x: hidden; /* Disable horizontal scroll */
+		padding-top: 20px;
+	}
+
+/* The navigation menu links */
+	.sidenav a {
+		padding: 6px 8px 6px 16px;
+		text-decoration: none;
+		font-size: 25px;
+		color: #ee9494;
+		display: block;
+	}
+
+
+/*Style specifies to hide the mobile class*/
+	.mobile{
+		display: none;
+	}
+
+/*Style specifies to display the desktop class*/
+	.desktop{
+		display: inline;
+	}
+	
+/* Style page content */
+	.content {
+
+		display:block;
+		font-family:'Niconne', cursive;
+		font-size:1em;
+		padding:20px;
+		border-radius:10px;
+		box-shadow:12px 12px 12px #404040;
+		clear: left;
+		margin-top: 4em;
+		color:#fff8b5;
+	}
+	#about a{
+		color:#fff8b5;
+		text-decoration:none;
+        font-family: 'Cookie', cursive;
+			
+	}
+    #div p, ul{
+        text-align: justify;
+        font-family:'Raleway', cursive;
+        
+    }
+    #div{
+        background-color: #fff8b5;
+        color:#093145;
+        padding: 1em;
+    }
+}
+
+/*Styles for Desktop layout*/
+
+@media only screen and (min-width:769px){
+	.commonDiv{
+		margin-left: 155px;
+		padding-left: 15px;
+	}
+	
+	.mobile{
+		display:none;
+	}
+
+	.desktop{
+		display:inline;
+	}
+	
+	.sidenav {
+		height: auto; /* Full-height: remove this if you want "auto" height */
+		width: 160px; /* Set the width of the sidebar */
+		z-index: 1; /* Stay on top */
+		top: 0; /* Stay at the top */
+		left: 0;
+		color:#fff8b5;
+		overflow-x: hidden; /* Disable horizontal scroll */
+		padding-top: 20px;
+	}
+	#about a{
+		color:#fff8b5;
+		text-decoration:none;
+        font-family: 'Cookie', cursive;
+			
+	}
+    #div p, ul{
+        text-align: justify;
+        font-family: 'Cormorant Upright', serif;
+        
+    }
+    #div{
+        background-color: #fff8b5;
+        color:#093145;
+        padding: 1em;
+    }
+
+/* The navigation menu links */
+	.sidenav a {
+		padding: 6px 8px 6px 16px;
+		text-decoration: none;
+		font-size: 25px;
+		color: #ee9494;
+		display: block;
+}
+
+
+/* Style page content */
+	.content {
+
+		display:block;
+		font-family:'Niconne', cursive;
+		font-size:2em;
+		padding:2em;
+		border-radius:1em;
+		box-shadow:1em 1em 1em #404040;
+		clear: left;
+		margin-top:1em;
+		color:#fff8b5;
+	}
+
+}
+
+footer{
+	background-color:#3C6478;
+	color:#f18973;
+	margin-top:50px;
+	clear:both;
+	font-size: 0.95em;
+	text-align: center;
+}

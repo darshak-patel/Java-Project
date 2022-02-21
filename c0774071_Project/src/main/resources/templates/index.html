@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- c0774071 - Darshak Patel -->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<link th:rel="stylesheet" th:href="@{/css/styles.css}">
+		<title>SPARTA LUGGAGE Home</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<script th:src="@{https://code.jquery.com/jquery-3.0.0.min.js}"></script>
+		<script th:src="@{https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js}"></script>
+		<script th:src="@{/js/jquery.highlight.js}"></script>
+		<script th:src="@{/js/slideshow.js}"></script>	
+		
+	</head>
+
+	<body>
+		<header class="commonDiv border1">
+			<img id="slide" th:src="@{/images/c1.jpg}" alt="">
+			<div id="slides"> 
+				<img id="slide" th:src="@{/images/c1.jpg}" alt="">
+				<img id="slide" th:src="@{/images/c2.jpg}" alt="">
+				<img id="slide" th:src="@{/images/c3.jpg}" alt="">
+				<img id="slide" th:src="@{/images/c4.jpg}" alt="">
+				<img id="slide" th:src="@{/images/c5.jpg}" alt="">
+				<img id="slide" th:src="@{/images/c6.jpg}" alt="">
+				<img id="slide" th:src="@{/images/c7.jpg}" alt="">
+			</div>
+		
+		</header>
+		<nav>	
+			<div class= "sidenav" id="menu">
+				<a th:href="@{/index}" id="logo"><img th:src="@{/images/logo.png}" width="100px" height="80px" ></a>
+				<a th:href="@{/index}" id="home" class="attr">Home</a> &nbsp; &nbsp;
+				<a th:href="@{/about}" id="about" class="attr">About Us</a> &nbsp; &nbsp;
+				<a th:href="@{/}" id="home" class="attr">Sign Out</a> &nbsp; &nbsp;
+			</div>
+		
+		</nav>
+				
+		<main class="commonDiv content">	
+			<p> Welcome to Sparta Luggage, your number one source for luggage bags. We’re dedicated to providing you the very best of luggage bags, with an emphasis on quality at affordable prices 100% manufactured in North America </p>
+			<p>Founded in 2016 by Darshak Patel, Sparta Luggage has come a long way from its beginnings in Sarnia. When Darshak first started out, his passion for travelling drove him to start his own business. 
+				The inspiration came from the fact that luggage bag size also affects the travelling experience of the travellers.</p>		
+				
+		</main>
+				
+		<footer class="commonDiv"> 
+			&copy; copyright 2016. All Rights Reserved.<br>
+			<a th:href="@{mailto:customercare@spartaluggage.com}">Request information</a><br>
+			Darshak Patel - C0774071<br>			
+		</footer>
+	
+	</body>
+	
+	
+</html>

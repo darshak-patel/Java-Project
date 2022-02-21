@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<body>
+	<table>
+		<tbody>
+			<tr th:each="user: ${userDb}">
+				<td th:text="${user.getName()}"/> 
+				<td th:text="${user.getAge()}"/>
+				<td th:text="${user.getOccupation().getTitle()}"/> 
+				<td th:text="${user.getOccupation().getSalary()}"/>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

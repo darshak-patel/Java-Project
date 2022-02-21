@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+	<head>
+		<link th:rel="stylesheet" th:href="@{/css/about.css}"> 
+		<title>SPARTA LUGGAGE story</title>
+		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<script th:src="@{https://code.jquery.com/jquery-3.0.0.min.js}"></script>
+		<script th:src="@{http://code.jquery.com/jquery-2.1.4.min.js}"></script>
+		<script th:src="@{https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js}"></script>
+		<script th:src="@{https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js}"></script>
+		
+		<script th:src="@{/js/jquery.highlight.js}"></script>
+		<script th:src="@{/js/about.js}"></script>	
+	</head>
+	
+	<body>
+		<header class="commonDiv border1">
+			<div>
+				<img th:src="@{/images/about.jpg}" alt="Our Story" width="100%">
+			</div>
+		
+		</header>	
+	
+		<nav>
+			<div class="nav mobile">
+				<ul>
+					<li><a th:href="@{/index}">Home</a></li>
+					<li><a th:href="@{/about}">About Us</a></li>
+					<li><a th:href="@{/}">Sign Out</a></li>
+				</ul>
+			</div>
+			
+			<div class= "sidenav desktop tablet" id="menu">
+				<a th:href="@{/index}" id="logo"><img src="images/logo.png" width="100px" height="80px" ></a>
+				<a th:href="@{/index}" id="home" class="attr">Home</a> &nbsp; &nbsp;
+				<a th:href="@{/about}" id="about" class="attr">About Us</a> &nbsp; &nbsp;
+				<a th:href="@{/}" id="home" class="attr">Sign Out</a> &nbsp; &nbsp;
+			</div>
+		</nav>
+		
+		<main>
+			<div class="desktop commonDiv content" id="about">
+				<p>Founded in 2016 by Darshak Patel, Sparta Luggage has come a long way from its beginnings in Sarnia.</p>
+				<h2><a href="#" >Our Story</a></h2>
+				<div id ="div" class="minus">
+					<p>Darshak wasted an entire day and gas trying to purchase a perfect luggage bag. After hiking nearly a mile to find the right aisle, Darshak finally found the luggage store,
+					but the model that he wanted was overpriced and sold out. </p>
+					<p>Exhausted from shopping, Darshak special ordered an overpriced bag, paid an enormous amount sales tax and a huge service charge to have it shipped to his house. He realized that there's got to be a better way! </p>
+					<p>Moreover,his passion for travelling drove him to start his own business. One more reason for Darshak's inspiration came from the fact that luggage bag size also affects the travelling experience of the travellers.</p>
+				</div>	
+					<h2><a href="#" >Why Should You Shop With Us????</a></h2>
+					<div id ="div" class="minus">
+						<p><ul>
+							<li>You will get what you paid for</li>
+							<li>30-Day Money Back Guarantee</li>
+							<li>1 Year Warranty</li>
+							<li>Quality Assurance</li>
+							<li>Online Services</li>
+							<li>Free Repair Services</li>
+							<li>Customer Services</li>
+							<li>Our Team is always here to help you, <strong>24X7</strong></li>
+						
+					</ul></p>
+					</div>
+				<h2><a href="#" >Our Guarantee</a></h2>
+				<div id ="div" class="minus">
+					<p>SPARTA Commitment is to <strong>EVERY</strong> customer. We commit to provide the lowest prices with our 'BEAT OUR PRICE GUARANTEE'</p>
+				</div>
+				
+	
+			</div>
+			
+			<div class="mobile main">
+				<p>Welcome to Sparta Luggage, your number one source for luggage bags. We’re dedicated to providing you the very best of luggage bag. </p>
+				<p>Founded in 2016 by Darshak Patel, Sparta Luggage has come a long way from its beginnings in Sarnia.</p>
+				<p>WHY SHOULD YOU SHOP WITH US????
+					<ul>
+						<li>You will get what you paid for</li>
+						<li>30-Day Money Back Guarantee</li>
+						<li>1 Year Warranty</li>
+						<li>Quality Assurance</li>
+						<li>Online Services</li>
+						<li>Free Repair Services</li>
+						<li>Customer Services</li>
+						<li>Our Team is always here to help you, <strong>24X7</strong></li>
+						
+					</ul>
+				</p>
+				<p>Phone Number<br>
+				<a th:href="@{tel: 6475467576}"> Call Us Today</a></p>
+			</div>
+			
+		</main>
+		<footer>
+		
+			&copy; copyright 2016. All Rights Reserved.<br>
+			<a th:href="@{mailto:customercare@yspartaluggage.com}">Request information</a><br>
+			Darshak Patel - C0774071<br>
+			
+		</footer>
+	</body>
+</html>
